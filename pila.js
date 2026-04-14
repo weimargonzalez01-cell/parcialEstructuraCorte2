@@ -17,3 +17,11 @@ function pop() {
   let eliminado = pila.pop(); // elimina y guarda el último objeto
   console.log("Elemento eliminado:", eliminado); // muestra el objeto eliminado
 }
+
+// Función para mostrar todos los objetos de la pila
+function mostrarPila() {
+  console.log("=== Estado actual de la pila ===");
+  for (let i = pila.length - 1; i >= 0; i--) { // recorre de último a primero
+    console.log(pila[i]); // muestra cada objeto
+  }
+}
