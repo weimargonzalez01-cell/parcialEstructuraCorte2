@@ -17,3 +17,11 @@ function eliminar() {
   let eliminado = cola.shift(); // elimina y guarda el primer número
   console.log("Elemento eliminado:", eliminado); // muestra el número eliminado
 }
+
+// Función para mostrar todos los objetos de la cola
+function mostrarCola() {
+  console.log("=== Estado actual de la cola ===");
+  for (let i = 0; i < cola.length; i++) { // recorre de primero a último
+    console.log(cola[i]); // muestra cada objeto
+  }
+}
