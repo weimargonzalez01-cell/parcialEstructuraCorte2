@@ -3,34 +3,34 @@ let pila = [];
 
 // Función para agregar un objeto a la pila
 function push() {
-  let persona = { Nombre: "Orlando", Edad: 30 }; // objeto de prueba
-  pila.push(persona); // agrega el objeto al final del array
-  console.log("Elemento agregado:", persona); // muestra el objeto agregado
+  let persona = { Nombre: "Orlando", Edad: 30 };
+  pila.push(persona);
+  console.log("Elemento agregado:", persona);
   mostrarPila();
 }
 
-// Función para eliminar el último objeto de la pila (LIFO)
+// Función para eliminar el último objeto de la pila
 function pop() {
-  if (pila.length == 0) { // verifica si la pila está vacía
+  if (pila.length == 0) {
     console.log("La pila está vacía, no hay nada que eliminar");
     return;
   }
-  let eliminado = pila.pop(); // elimina y guarda el último objeto
-  console.log("Elemento eliminado:", eliminado); // muestra el objeto eliminado
+  let eliminado = pila.pop(); 
+  console.log("Elemento eliminado:", eliminado);
   mostrarPila();
 }
 
 // Función para mostrar todos los objetos de la pila
 function mostrarPila() {
   console.log("=== Estado actual de la pila ===");
-  for (let i = pila.length - 1; i >= 0; i--) { // recorre de último a primero
-    console.log(pila[i]); // muestra cada objeto
+  for (let i = pila.length - 1; i >= 0; i--) {
+    console.log(pila[i]);
   }
 }
 
-// ===== PRUEBAS =====
-push(); // agrega primer objeto
-push(); // agrega segundo objeto
-push(); // agrega tercer objeto
-pop();  // elimina el último
-pop();  // elimina el siguiente
+// PRUEBAS
+push();
+push();
+push();
+pop();
+pop();
