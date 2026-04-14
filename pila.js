@@ -2,8 +2,7 @@
 let pila = [];
 
 // Función para agregar un objeto a la pila
-function push() {
-  let persona = { Nombre: "Orlando", Edad: 30 };
+function push(persona) {
   pila.push(persona);
   console.log("Elemento agregado:", persona);
   mostrarPila();
@@ -29,8 +28,8 @@ function mostrarPila() {
 }
 
 // PRUEBAS
-push();
-push();
-push();
+push({ Nombre: "Orlando", Edad: 30 });
+push({ Nombre: "Maria", Edad: 25 });  
+push({ Nombre: "Carlos", Edad: 40 }); 
 pop();
-pop();
+pop(); 

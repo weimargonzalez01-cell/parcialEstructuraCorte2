@@ -2,8 +2,7 @@
 let cola = [];
 
 // Función para agregar un número a la cola
-function agregar() {
-  let numero = 10;
+function agregar(numero) {
   cola.push(numero);
   console.log("Elemento agregado:", numero);
   mostrarCola();
@@ -30,8 +29,9 @@ function mostrarCola() {
 
 
 // PRUEBAS
-agregar();
-agregar();
-agregar();
-eliminar();
-eliminar();
+// ===== PRUEBAS =====
+agregar(10);
+agregar(25);
+agregar(40);
+eliminar(); 
+eliminar(); 
