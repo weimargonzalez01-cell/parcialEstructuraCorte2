@@ -7,3 +7,13 @@ function agregar() {
   cola.push(numero); // agrega el número al final del array
   console.log("Elemento agregado:", numero); // muestra el número agregado
 }
+
+// Función para eliminar el primer número de la cola (FIFO)
+function eliminar() {
+  if (cola.length == 0) { // verifica si la cola está vacía
+    console.log("La cola está vacía, no hay nada que eliminar");
+    return;
+  }
+  let eliminado = cola.shift(); // elimina y guarda el primer número
+  console.log("Elemento eliminado:", eliminado); // muestra el número eliminado
+}
